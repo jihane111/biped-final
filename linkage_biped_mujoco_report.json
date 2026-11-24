@@ -1,0 +1,199 @@
+{
+  "units": "metres, kilograms, seconds unless otherwise named",
+  "frame": "X=x_plane, Y=left, Z=y_up; hinge axis -Y",
+  "geometry": {
+    "params": {
+      "design": null,
+      "mirror": true,
+      "linkage_size": null,
+      "height_mm": 1300.0,
+      "start_angle_deg": null,
+      "phase_deg": 180.0,
+      "side_gap": 270.0,
+      "layer_order": "crank,rocker,rear_thigh,front_thigh,rear_foreleg,foot,front_foreleg",
+      "layer_gap": 4.0,
+      "link_width": 26.0,
+      "link_thickness": 8.0,
+      "link_bore": 8.2,
+      "pin_clearance": 0.2,
+      "shaft_diameter": 14.0,
+      "bearing_diameter": 28.0,
+      "motor_diameter": 90.0,
+      "motor_length": 85.0,
+      "mount_thickness": 10.0,
+      "body_length": 260.0,
+      "body_height": 120.0,
+      "foot_radius": 10.0,
+      "body_mass": 5.0,
+      "motor_mass": 1.2
+    },
+    "ref_mm": {
+      "O": [
+        0.0,
+        -0.0
+      ],
+      "P": [
+        34.79253524502981,
+        -1.600883523544316
+      ],
+      "C": [
+        7.790966481249002,
+        -23.693076148455873
+      ],
+      "A": [
+        55.17711877816076,
+        -48.02650570632947
+      ],
+      "B": [
+        54.21658866403417,
+        -21.34511364725754
+      ],
+      "K1": [
+        147.28128416607709,
+        -93.70504891146065
+      ],
+      "K2": [
+        153.8982693967269,
+        -80.89798072310612
+      ],
+      "K4": [
+        159.2345478085413,
+        -97.547169367967
+      ],
+      "Pf": [
+        131.48590006710648,
+        -205.3399932866176
+      ],
+      "Pr": [
+        142.69208473191668,
+        -204.27273760425473
+      ],
+      "TIP": [
+        141.62482904955382,
+        -234.1558967104153
+      ]
+    },
+    "linkage_scale": 4.787408797935849,
+    "native_foreleg_mm": 108.0,
+    "foreleg_mm": 517.0401501770717,
+    "reference_body_top_to_sole_mm": 1300.0,
+    "start_angles_deg": {
+      "L": -108.20235559650536,
+      "R": 71.79764440349464
+    },
+    "layer_centres_mm": {
+      "L": {
+        "crank": 135.0,
+        "front_thigh": 171.0,
+        "rocker": 147.0,
+        "rear_thigh": 159.0,
+        "rear_foreleg": 183.0,
+        "front_foreleg": 207.0,
+        "foot": 195.0
+      },
+      "R": {
+        "crank": -135.0,
+        "front_thigh": -171.0,
+        "rocker": -147.0,
+        "rear_thigh": -159.0,
+        "rear_foreleg": -183.0,
+        "front_foreleg": -207.0,
+        "foot": -195.0
+      }
+    }
+  },
+  "start_crank_angle_deg": {
+    "L": -108.20235559650536,
+    "R": 71.79764440349464
+  },
+  "simulation": {
+    "fixed_base": false,
+    "payload_mass_kg": 0.0,
+    "timestep": 0.0005,
+    "actuator": "velocity",
+    "max_crank_rpm_L": 100.0,
+    "max_crank_rpm_R": 100.0,
+    "max_crank_torque_L": 55.0,
+    "max_crank_torque_R": 55.0,
+    "velocity_kv": 35.0,
+    "crank_armature": 0.005,
+    "crank_damping": 0.05,
+    "pin_armature": 1e-05,
+    "pin_damping": 0.003,
+    "floor_friction": 0.8,
+    "linkage_material": "abs",
+    "print_fill": 0.9,
+    "hardware_density": 7800.0,
+    "foot_density": 1100.0,
+    "sweep_step_deg": 2.0
+  },
+  "chassis_height_at_start_m": 1.131,
+  "mass_kg": {
+    "total": 9.41444503599717,
+    "parts": {
+      "chassis_shell": 5.0,
+      "motor_L": 1.2,
+      "cheek_L": 0.18148811001076304,
+      "output_bearing_L": 0.03602150136606057,
+      "crank_L_plate_0": 0.025895015906687774,
+      "front_thigh_L_plate_0": 0.16096001836689716,
+      "rocker_L_plate_0": 0.09548983080213455,
+      "rear_thigh_L_plate_0": 0.11245649429017135,
+      "rear_foreleg_L_plate_0": 0.0163130470680593,
+      "rear_foreleg_L_plate_1": 0.10302276713221477,
+      "front_foreleg_L_plate_0": 0.10481900529482291,
+      "foot_L_plate_0": 0.014887200354379494,
+      "foot_L_plate_1": 0.020555267509991388,
+      "foot_pad_L": 0.004607669225265031,
+      "motor_stub_L": 0.026415767668444414,
+      "hardware_C_L": 0.01725111357939227,
+      "hardware_A_L": 0.012546264421376194,
+      "hardware_K1_L": 0.007841415263360121,
+      "hardware_K4_L": 0.01725111357939227,
+      "hardware_P_L": 0.013330405947712207,
+      "hardware_B_L": 0.007841415263360121,
+      "hardware_K2_L": 0.012546264421376194,
+      "hardware_Pf_L": 0.007841415263360121,
+      "hardware_Pr_L": 0.007841415263360121,
+      "motor_R": 1.2,
+      "cheek_R": 0.18148811001076304,
+      "output_bearing_R": 0.03602150136606057,
+      "crank_R_plate_0": 0.025895015906687715,
+      "front_thigh_R_plate_0": 0.16096001836689033,
+      "rocker_R_plate_0": 0.09548983080213498,
+      "rear_thigh_R_plate_0": 0.11245649429016695,
+      "rear_foreleg_R_plate_0": 0.016313047068059076,
+      "rear_foreleg_R_plate_1": 0.1030227671322183,
+      "front_foreleg_R_plate_0": 0.104819005294837,
+      "foot_R_plate_0": 0.014887200354379494,
+      "foot_R_plate_1": 0.02055526750999227,
+      "foot_pad_R": 0.004607669225265031,
+      "motor_stub_R": 0.026415767668444414,
+      "hardware_C_R": 0.01725111357939227,
+      "hardware_A_R": 0.012546264421376194,
+      "hardware_K1_R": 0.007841415263360121,
+      "hardware_K4_R": 0.01725111357939227,
+      "hardware_P_R": 0.013330405947712207,
+      "hardware_B_R": 0.007841415263360121,
+      "hardware_K2_R": 0.012546264421376194,
+      "hardware_Pf_R": 0.007841415263360121,
+      "hardware_Pr_R": 0.007841415263360121
+    }
+  },
+  "counts": {
+    "hinge_joints": 14,
+    "expected_nq": 21,
+    "expected_nv": 20,
+    "actuators": 2,
+    "connect_constraints": 6,
+    "expected_degrees_of_freedom_after_constraints": 8
+  },
+  "assumptions": [
+    "Body and motor masses are prescribed placeholders. Links use polygonal plate inertias, adjusted for bore volume and print fill.",
+    "The bent link is partitioned at the K1 bisector. Foot base and toe overlap is deducted from the toe mass; pad/prism overlap and bore-induced changes to inertia distribution are approximated.",
+    "Cheeks use solid nylon. Each side has a bearing with annular mass, a motor output stub and nine local pin cylinders. Hardware density and foot pad density are adjustable; nuts, washers and electronics are omitted.",
+    "Crank armature and passive bearing damping are adjustable.",
+    "The chassis and two foot pads collide with the floor. Internal linkage collisions are disabled.",
+    "Hinge qpos measures displacement from each side's own reference angle. Velocity controls use rad/s; torque controls use Nm."
+  ]
+}

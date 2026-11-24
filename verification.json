@@ -1,0 +1,231 @@
+{
+  "passed": true,
+  "failures": [],
+  "mujoco_version": "4.0.1",
+  "compiled_model": {
+    "nq": 21,
+    "nv": 20,
+    "nu": 2,
+    "connects": 6,
+    "equality_rank": 12,
+    "internal_dof": 2
+  },
+  "limits": {
+    "pin_error_mm": 0.0001,
+    "sweep_gap_mm": 1e-05,
+    "dynamic_gap_mm": 1.0,
+    "idle_pin_motion_mm": 0.0001,
+    "idle_crank_motion_deg": 1e-05,
+    "minimum_driven_motion_deg": 1.0
+  },
+  "sweep_absolute_crank_deg": [
+    0,
+    360
+  ],
+  "samples_per_crank": 361,
+  "sweep": {
+    "L": {
+      "max_pin_error_mm": 1.3034213198596336e-09,
+      "per_pin_max_mm": {
+        "O": 0.0,
+        "P": 9.26884041876843e-11,
+        "C": 1.7112135109858138e-13,
+        "A": 2.1133331673130737e-10,
+        "B": 1.4588084089150043e-10,
+        "K1": 6.190415856970737e-10,
+        "K2": 5.90761435004614e-10,
+        "K4": 6.68203068360448e-10,
+        "Pf": 1.186960668848728e-09,
+        "Pr": 1.2325256676431158e-09,
+        "TIP": 1.3034213198596336e-09
+      },
+      "max_connect_gap_mm": 9.271416325864168e-11,
+      "idle_leg_max_pin_motion_mm": 0.0
+    },
+    "R": {
+      "max_pin_error_mm": 1.3146059734612162e-09,
+      "per_pin_max_mm": {
+        "O": 0.0,
+        "P": 9.26884041876843e-11,
+        "C": 1.9328852131274408e-13,
+        "A": 2.110993228105996e-10,
+        "B": 1.4511042142507817e-10,
+        "K1": 6.184828539074499e-10,
+        "K2": 5.874351767067391e-10,
+        "K4": 6.677711786213697e-10,
+        "Pf": 1.1960919744209936e-09,
+        "Pr": 1.242591477945888e-09,
+        "TIP": 1.3146059734612162e-09
+      },
+      "max_connect_gap_mm": 9.268030161530193e-11,
+      "idle_leg_max_pin_motion_mm": 0.0
+    }
+  },
+  "dynamic_fixture": "Rigidly mounted chassis, no gravity or contact, production links, masses, connects and actuators.",
+  "dynamic_velocity_rpm": 10.0,
+  "dynamic_seconds_per_trial": 1.0,
+  "dynamic_trials": [
+    {
+      "phase_deg": 0,
+      "both": {
+        "max_connect_gap_mm": 0.0019598205221192625,
+        "crank_travel_deg": {
+          "L": 52.29779238428056,
+          "R": 52.2977923862976
+        },
+        "max_phase_drift_deg": 2.6111359756439585e-07
+      },
+      "left_only": {
+        "max_connect_gap_mm": 0.001959820522182997,
+        "crank_travel_deg": {
+          "L": 52.29779238428069,
+          "R": 0.0
+        },
+        "idle_leg": "R",
+        "idle_max_pin_motion_mm": 5.245683659194687e-11,
+        "idle_max_crank_motion_deg": 1.3642420526593924e-12
+      },
+      "right_only": {
+        "max_connect_gap_mm": 0.001959447782571233,
+        "crank_travel_deg": {
+          "L": 0.0,
+          "R": 52.2977923862975
+        },
+        "idle_leg": "L",
+        "idle_max_pin_motion_mm": 0.0,
+        "idle_max_crank_motion_deg": 0.0
+      }
+    },
+    {
+      "phase_deg": 90,
+      "both": {
+        "max_connect_gap_mm": 0.0020710890435372427,
+        "crank_travel_deg": {
+          "L": 52.29779238428042,
+          "R": 52.33444951614951
+        },
+        "max_phase_drift_deg": 0.03988171045605071
+      },
+      "left_only": {
+        "max_connect_gap_mm": 0.001959820522182997,
+        "crank_travel_deg": {
+          "L": 52.29779238428052,
+          "R": -1.4210854715202004e-14
+        },
+        "idle_leg": "R",
+        "idle_max_pin_motion_mm": 1.1923068014527445e-11,
+        "idle_max_crank_motion_deg": 1.7053025658242404e-13
+      },
+      "right_only": {
+        "max_connect_gap_mm": 0.0020710890435372427,
+        "crank_travel_deg": {
+          "L": 0.0,
+          "R": 52.334449516149675
+        },
+        "idle_leg": "L",
+        "idle_max_pin_motion_mm": 0.0,
+        "idle_max_crank_motion_deg": 0.0
+      }
+    },
+    {
+      "phase_deg": 180,
+      "both": {
+        "max_connect_gap_mm": 0.0020227972457679514,
+        "crank_travel_deg": {
+          "L": 52.29779238428059,
+          "R": 52.35033066421584
+        },
+        "max_phase_drift_deg": 0.05253827993524851
+      },
+      "left_only": {
+        "max_connect_gap_mm": 0.0019598205219120363,
+        "crank_travel_deg": {
+          "L": 52.297792384280555,
+          "R": 2.6434052870288407e-16
+        },
+        "idle_leg": "R",
+        "idle_max_pin_motion_mm": 1.6077746776921858e-13,
+        "idle_max_crank_motion_deg": 4.979078768027853e-16
+      },
+      "right_only": {
+        "max_connect_gap_mm": 0.0020227972457679514,
+        "crank_travel_deg": {
+          "L": 0.0,
+          "R": 52.350330664215846
+        },
+        "idle_leg": "L",
+        "idle_max_pin_motion_mm": 0.0,
+        "idle_max_crank_motion_deg": 0.0
+      }
+    },
+    {
+      "phase_deg": 37,
+      "both": {
+        "max_connect_gap_mm": 0.0020098810596570634,
+        "crank_travel_deg": {
+          "L": 52.29779238428055,
+          "R": 52.30713974697123
+        },
+        "max_phase_drift_deg": 0.01413484953909272
+      },
+      "left_only": {
+        "max_connect_gap_mm": 0.001959820522039505,
+        "crank_travel_deg": {
+          "L": 52.29779238428054,
+          "R": 2.842170943040401e-14
+        },
+        "idle_leg": "R",
+        "idle_max_pin_motion_mm": 8.413018027785047e-12,
+        "idle_max_crank_motion_deg": 1.7053025658242404e-13
+      },
+      "right_only": {
+        "max_connect_gap_mm": 0.002009881059709364,
+        "crank_travel_deg": {
+          "L": 0.0,
+          "R": 52.30713974697133
+        },
+        "idle_leg": "L",
+        "idle_max_pin_motion_mm": 0.0,
+        "idle_max_crank_motion_deg": 0.0
+      }
+    }
+  ],
+  "free_base_trials": [
+    {
+      "phase_deg": 0,
+      "max_connect_gap_mm": 0.04162307680331494,
+      "steps_with_contact": 1878,
+      "crank_travel_deg": {
+        "L": 55.7573997999125,
+        "R": 55.757639582148045
+      }
+    },
+    {
+      "phase_deg": 90,
+      "max_connect_gap_mm": 0.12233109488720814,
+      "steps_with_contact": 1841,
+      "crank_travel_deg": {
+        "L": 58.286422494456346,
+        "R": 54.301401548282826
+      }
+    },
+    {
+      "phase_deg": 180,
+      "max_connect_gap_mm": 0.09646324810354988,
+      "steps_with_contact": 1978,
+      "crank_travel_deg": {
+        "L": 46.64590638135695,
+        "R": 46.521577752339795
+      }
+    },
+    {
+      "phase_deg": 37,
+      "max_connect_gap_mm": 0.10480647367167249,
+      "steps_with_contact": 1796,
+      "crank_travel_deg": {
+        "L": 56.84229484155936,
+        "R": 60.200762617736956
+      }
+    }
+  ]
+}
