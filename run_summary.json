@@ -1,0 +1,18 @@
+{
+  "simulated_s": 106.96600000032872,
+  "ended_by": "interrupted",
+  "bench": false,
+  "rpm": {
+    "L": 100.0,
+    "R": 100.0
+  },
+  "final_crank_offset_deg": {
+    "L": 61468.717832076894,
+    "R": 61389.930675852556
+  },
+  "peak_crank_torque_Nm": {
+    "L": 55.0,
+    "R": 55.0
+  },
+  "max_sampled_connect_gap_m": 0.0002431121625324687
+}
